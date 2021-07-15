@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		6CB891C3269EF81A00BF87E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB891C2269EF81A00BF87E0 /* AppDelegate.swift */; };
 		6CB891C5269EF81A00BF87E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB891C4269EF81A00BF87E0 /* SceneDelegate.swift */; };
-		6CB891C7269EF81A00BF87E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB891C6269EF81A00BF87E0 /* ViewController.swift */; };
 		6CB891CA269EF81A00BF87E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB891C8269EF81A00BF87E0 /* Main.storyboard */; };
 		6CB891CC269EF81B00BF87E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB891CB269EF81B00BF87E0 /* Assets.xcassets */; };
 		6CB891CF269EF81B00BF87E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB891CD269EF81B00BF87E0 /* LaunchScreen.storyboard */; };
+		6CB891D7269EF85200BF87E0 /* BountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB891D6269EF85200BF87E0 /* BountyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6CB891BF269EF81A00BF87E0 /* BountyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BountyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB891C2269EF81A00BF87E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CB891C4269EF81A00BF87E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6CB891C6269EF81A00BF87E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6CB891C9269EF81A00BF87E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CB891CB269EF81B00BF87E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CB891CE269EF81B00BF87E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CB891D0269EF81B00BF87E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CB891D6269EF85200BF87E0 /* BountyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				6CB891C2269EF81A00BF87E0 /* AppDelegate.swift */,
 				6CB891C4269EF81A00BF87E0 /* SceneDelegate.swift */,
-				6CB891C6269EF81A00BF87E0 /* ViewController.swift */,
 				6CB891C8269EF81A00BF87E0 /* Main.storyboard */,
+				6CB891D6269EF85200BF87E0 /* BountyViewController.swift */,
 				6CB891CB269EF81B00BF87E0 /* Assets.xcassets */,
 				6CB891CD269EF81B00BF87E0 /* LaunchScreen.storyboard */,
 				6CB891D0269EF81B00BF87E0 /* Info.plist */,
@@ -137,8 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CB891C7269EF81A00BF87E0 /* ViewController.swift in Sources */,
 				6CB891C3269EF81A00BF87E0 /* AppDelegate.swift in Sources */,
+				6CB891D7269EF85200BF87E0 /* BountyViewController.swift in Sources */,
 				6CB891C5269EF81A00BF87E0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +288,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BountyList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BountyList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
