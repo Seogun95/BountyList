@@ -7,8 +7,6 @@
 
 import UIKit
 
-
-
 class BountyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let nameList = ["brook", "chopper", "franky", "luffy", "nami", "robin", "sanji", "zoro"]
@@ -49,6 +47,7 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
     // UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("---> \(indexPath.row)")
+        performSegue(withIdentifier: "showDetail", sender: nil)
     }
 }
 
