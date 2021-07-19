@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C4E86DB26A5877A0059062D /* BountyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4E86DA26A5877A0059062D /* BountyInfo.swift */; };
+		6C4E86DD26A587930059062D /* BountyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4E86DC26A587930059062D /* BountyViewModel.swift */; };
 		6C79339426A0554C004C09D3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C79339326A0554C004C09D3 /* DetailViewController.swift */; };
 		6CB891C3269EF81A00BF87E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB891C2269EF81A00BF87E0 /* AppDelegate.swift */; };
 		6CB891C5269EF81A00BF87E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB891C4269EF81A00BF87E0 /* SceneDelegate.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C4E86DA26A5877A0059062D /* BountyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyInfo.swift; sourceTree = "<group>"; };
+		6C4E86DC26A587930059062D /* BountyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyViewModel.swift; sourceTree = "<group>"; };
 		6C79339326A0554C004C09D3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6CB891BF269EF81A00BF87E0 /* BountyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BountyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB891C2269EF81A00BF87E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C4E86DE26A5C20B0059062D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C4E86DC26A587930059062D /* BountyViewModel.swift */,
+				6CB891D6269EF85200BF87E0 /* BountyViewController.swift */,
+				6C79339326A0554C004C09D3 /* DetailViewController.swift */,
+				6C4E86DA26A5877A0059062D /* BountyInfo.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		6CB891B6269EF81A00BF87E0 = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +76,7 @@
 				6CB891C2269EF81A00BF87E0 /* AppDelegate.swift */,
 				6CB891C4269EF81A00BF87E0 /* SceneDelegate.swift */,
 				6CB891C8269EF81A00BF87E0 /* Main.storyboard */,
-				6CB891D6269EF85200BF87E0 /* BountyViewController.swift */,
-				6C79339326A0554C004C09D3 /* DetailViewController.swift */,
+				6C4E86DE26A5C20B0059062D /* Views */,
 				6CB891CB269EF81B00BF87E0 /* Assets.xcassets */,
 				6CB891CD269EF81B00BF87E0 /* LaunchScreen.storyboard */,
 				6CB891D0269EF81B00BF87E0 /* Info.plist */,
@@ -140,8 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C4E86DB26A5877A0059062D /* BountyInfo.swift in Sources */,
 				6CB891C3269EF81A00BF87E0 /* AppDelegate.swift in Sources */,
 				6CB891D7269EF85200BF87E0 /* BountyViewController.swift in Sources */,
+				6C4E86DD26A587930059062D /* BountyViewModel.swift in Sources */,
 				6CB891C5269EF81A00BF87E0 /* SceneDelegate.swift in Sources */,
 				6C79339426A0554C004C09D3 /* DetailViewController.swift in Sources */,
 			);
