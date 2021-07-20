@@ -20,11 +20,19 @@ class BountyViewModel {
         bountyInfo(name: "zoro", bounty: 50000000)
     ]
     
+    // 가격 순서
+    var sortedList: [bountyInfo] {
+        let sortedList = bountyInfoList.sorted { prev, next in
+            return prev.bounty > next.bounty
+        }
+        return sortedList
+    }
+    
     var numberOfBountyList: Int {
         return bountyInfoList.count
     }
     
     func BountyInfo(at index: Int) -> bountyInfo {
-        return bountyInfoList[index]
+        return sortedList[index]
     }
 }
