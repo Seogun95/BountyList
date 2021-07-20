@@ -29,14 +29,40 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var bountyLabel : UILabel!
+    @IBOutlet weak var NameLabelCenterX: NSLayoutConstraint!
+    @IBOutlet weak var BountyLabelCenterX: NSLayoutConstraint!
     
     let viewModel = DetailViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        prepareAnimation()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        showAnimation()
+    }
+    
+    private func prepareAnimation() {
+        NameLabelCenterX.constant = view.bounds.width
+        BountyLabelCenterX.constant = view.bounds.width
+    }
+    
+    private func showAnimation() {
+        NameLabelCenterX.constant = 0
+        BountyLabelCenterX.constant = 0
+        
+        // 레이어 애니메이션 효과
+        UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 3, options: .allowUserInteraction, animations: {
+            self.view.layoutIfNeeded()
+        }, completion: nil)
+        
+        // 이미지 뷰 애니메이션 효과
+        UIView.transition(with: imgView, duration: 0.5, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+    }
+    
     
     func updateUI() {
         if let bountyInfo = viewModel.BountyInfo {
